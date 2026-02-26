@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+</head>
+<body>
+    <h1 align="center">Multiply Application</h1>
+    <form action="multi" method="post" align="center">
+        {% csrf_token %}
+        Enter 1st value <input type="number" name="a" required><br><br>
+        Enter 2nd value <input type="number" name="b" required><br><br>
+        <button>Find Multiplication</button>
+    </form>
+    <h6 align="center">{{ans}}</h6>
+</body>
+</html>
